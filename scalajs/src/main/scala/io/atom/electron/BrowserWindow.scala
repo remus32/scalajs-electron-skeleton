@@ -10,11 +10,11 @@ import js.Dynamic.{global => g}
 @js.native
 trait BrowserWindow extends js.Object with EventEmitter {
 
-  def webContents(): js.Dynamic = js.native
+  val webContents: js.Dynamic = js.native
 
   def devToolsWebContents(): js.Dynamic = js.native
 
-  def id(): Int = js.native
+  val id: Int = js.native
 
   def destroy(): Unit = js.native
 
